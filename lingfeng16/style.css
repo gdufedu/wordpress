@@ -1,0 +1,389 @@
+/*
+Theme Name: lingfeng16
+Author: 凌风
+Description: 橙色博客主题
+Version: 1.0
+*/
+/*-- 常用HTML元素边距归零 --*/
+html, body, h1, h2, h3, h4, div, p, ul, li, dl, dt, dd, a, span, table, tr, td {
+	padding:0;
+	margin:0;
+}
+
+/*-- 设置网页默认字体和背景 --*/
+body {
+	/*设置默认字体为‘微软雅黑’，如果用户电脑不存在该字体，则依次使用‘宋体, arial, verdana, sans-serif’ 字体*/
+	font-family: '微软雅黑', '宋体', Arial, Verdana, Sans-Serif;
+	font-size:12px;
+	background:#F1F2F6;
+	color:#777;
+}
+
+/*-- 设置超链接默认效果 --*/
+a {
+	text-decoration: none;
+	color: #434a54;
+}
+
+/*-- 设置超链接鼠标悬停时的默认效果 --*/
+a:hover {
+	color: #FF6F3D;
+}
+
+/*-- 设置图片的默认效果，解决IE浏览器默认给图片加带边框 --*/
+img {
+	border:none;
+}
+
+/*-- 设置无序列表ul和li元素的默认效果，去除前面的小圆点符号 --*/
+ul, li {
+	list-style:none;
+}
+
+/*-- 清除浮动效果 --*/
+.clear {
+	clear:both;
+}
+
+/*-- header-top --*/
+.header-top {
+	height:30px;
+	line-height:30px;
+	background:#e6e9ed;
+	border-bottom:1px solid #e2e2e3;
+}
+
+.header-top-content {
+	width:980px;
+	margin:0 auto;
+}
+
+.rssfeed {
+	float:right;
+}
+
+.sitedesc {
+	float:left;
+}
+
+/*-- header-mid --*/
+.header-mid {
+	width:980px;
+	height:60px;
+	margin:15px auto;
+}
+
+.site-header {
+	float:left;
+}
+
+/*-- search form --*/
+#searchform {
+	float:right;
+	position:relative;
+	top:15px;
+}
+
+#s {
+	background-color: #FFFFFF;
+	float: left;
+	height: 28px;
+	width: 250px;
+	border: 1px solid #ddd;
+	line-height: 26px;
+	padding-left: 10px;
+	border-radius: 5px 0px 0px 5px;
+}
+
+#searchsubmit {
+	color: #FFFFFF;
+	background-color: #ff6f3d;
+	float: left;
+	height: 31px;
+	line-height:31px;
+	width: 60px;
+	border: 1px solid #ff6600;
+	border-radius: 0px 5px 5px 0px;
+}
+
+/*-- header-nav --*/
+.header-nav {
+	width:980px;
+	margin:0 auto;
+}
+
+/**-- menu --**/
+.menu {
+	height:45px;
+	line-height:45px;
+	background:#ff6f3d;
+	border-radius: 5px;
+	_overflow:hidden;
+	padding:0 5px;
+}
+
+.menu li {
+	float:left;
+	background:#ff6f3d;
+}
+
+.menu li a {
+	color:#FFFFFF;
+	font-size:16px;
+	padding-left:20px;
+	padding-right:20px;
+	display:block;
+
+}
+
+.menu li a:hover,
+.menu li.current-menu-item a {
+	background:#ED5F30;
+}
+
+
+.menu li ul li a {
+
+}
+
+#dropmenu,
+#dropmenu li {
+	position:relative;
+}
+
+#dropmenu li ul {
+	position:absolute;
+	 top:45px;
+	 left:0px;
+	 display:none;
+}
+
+#dropmenu li ul li {
+	width:140px;
+}
+
+/*-- bread --*/
+.bread {
+	width:980px;
+	margin:15px auto;
+}
+
+.location {
+	float:left;
+}
+
+.breadcrumbs {
+	float:left;
+}
+
+/*-- content --*/
+.content {
+	width:980px;
+	margin:0 auto;
+}
+
+/*-- article --*/
+.article {
+	background-color: #FFFFFF;
+	float: left;
+	width: 705px;
+	overflow: hidden;
+	border-radius: 5px;
+	margin-bottom:10px;
+}
+
+/*-- entry --*/
+.entry {
+	background-image: url(images/newsLine.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding: 25px;
+}
+
+.entry-title {
+	font-size: 22px;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+
+.entry-meta {
+	color:#999;
+}
+
+.entry-meta a {
+	color: rgb(0, 153, 204);
+}
+
+.entry-meta span {
+	float:right;
+}
+
+.entry-meta span a {
+	color:#999;
+}
+
+.entry-meta span .kan{
+	background: url(images/newsIcon.png) no-repeat 0px 0px;
+	padding-left: 20px;
+	padding-right: 15px;
+	font-style: normal;
+}
+
+.entry-meta span .ping {
+	background:url(images/newsIcon.png) no-repeat 0px -37px;
+	padding-left: 20px;
+	font-style: normal;
+}
+
+.entry-thumbnail {
+	float: left;
+	height: 150px;
+	width: 180px;
+	margin-right: 20px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.entry-cnt {
+	height:150px;
+	overflow:hidden;
+	font-size:14px;
+	line-height:25px;
+	margin-top:20px;
+}
+
+.entry-tag {
+	margin:10px 0 0;
+}
+
+.entry-tag a.more {
+	float:right;
+}
+
+
+/* -- sidebar -- */
+.sidebar {
+	width:260px;
+	float:right;
+	position:relative;
+}
+
+.widget {
+	background-color: #FFFFFF;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+
+.widget-title {
+	font-size: 14px;
+	line-height: 35px;
+	font-weight: 700;
+	padding-left: 9px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e8e8e8;
+	background: -moz-linear-gradient( top,#fefefe,#f1f1f1);
+	color: #333333;
+}
+
+.widget ul {
+	font-size: 14px;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+
+.widget ul li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.widget_recent_entries ul li a {
+	width:226px;
+	display:block;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+
+
+/*------------------
+	分页部分的CSS
+------------------*/
+.fenye{
+	height: 25px;
+	line-height: 25px;
+	_background: #F9F9F9;
+	padding: 2px 5px;
+	margin: 20px 4px;
+	_border: solid 1px #ccc;
+	_text-align: center;
+}
+
+.fenye a{
+	padding:4px 6px 4px 6px;
+	margin:0 2px 0 2px;
+	border:1px solid #aaa;
+	text-decoration:none;
+	color:#333;
+}
+
+.fenye a.current{
+	background:#ff6f3d;
+	color:#fff;
+}
+
+.fenye a:hover{
+	background:#ff6f3d;
+	color:#fff;
+}
+
+/*-- footer --*/
+.footer {
+	width:100%;
+	height:64px;
+	background:#E6E9ED;
+	border-top: 1px solid #e2e2e3;
+}
+
+
+/*-- post --*/
+.post {
+	background:none;
+}
+
+.post .entry-cnt {
+	height:auto;
+	line-height:2;
+	font-size:14px;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #eee;
+	padding:15px 0 0;
+}
+
+.post .entry-cnt p {
+	line-height:2;
+	font-size:14px;
+}
+
+.related {
+	padding:10px 5px 10px 5px;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	margin: 20px auto 10px auto;
+}
+
+.r-left {
+	float:left;
+}
+
+.r-right {
+	float:right;
+}
+
+/*-- discuss --*/
+.discuss {
+	padding:25px;
+}
