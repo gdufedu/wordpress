@@ -1,0 +1,321 @@
+/*
+Theme Name: lingfengkeji.com01
+Author: 凌风
+Author URI: http://www.lingfengkeji.com
+Description: 门户 蓝色
+Tags:蓝色 新闻 门户 高端
+*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{background:#fff;color:#333;font-size:12px; font-family:"宋体";}
+.clear{clear:both;}
+/* Default Link */
+a:link, a:visited{ color:#222; text-decoration: none;}
+a:active, a:hover{ color:#036; text-decoration: underline; }
+#wrap{width:960px;margin:0 auto;}
+#top{padding: 0px 15px;width: 928px;height: 28px;line-height: 28px;border: 1px solid #E1E9F0;border-top: none;background-color: #F3F5FA;overflow: hidden;}
+#ban{height:80px;margin: 8px 0px;}
+#ban img{position:relative;top:10px;}
+#nav{margin-bottom: 8px;height: 67px;background: url(images/navigation.png) no-repeat 0 0;}
+.mainnav{line-height:32px;height:32px;}
+.mainnav ul{list-style:none;}
+.mainnav ul li{float:left;background: url(images/navigation.png) no-repeat 0 -72px;position:relative;top:2px;}
+.mainnav ul li a{float:left;height:30px;padding:0 32px;text-decoration:none;color:#fff;}
+.mainnav ul li a:hover{text-decoration:underline;}
+.searchInput{position:relative;left:632px;top:8px;float: left;padding: 5px 8px 4px;width: 235px;height: 14px;line-height: 15px;border: none;background: none;}
+.searchBtn{float:right;background:none;border:none;position:relative;right:10px;top:8px;color:#fff;padding:0 17px 2px 13px;cursor:pointer;}
+
+#content{float: left;width: 702px;overflow: hidden;}
+.homebanner {margin-bottom: 8px;width: 702px;text-align: center;overflow: hidden;}
+.module{width:347px;float:left;margin:0 0 8px 0;height: 285px;background: url(images/section.png) no-repeat 0 0;overflow: hidden;}
+.left{margin-right:8px;}
+.slide .orbit-wrapper{position:relative;top:1px;}
+.slide .orbit-wrapper img{height:282px;width:347px;}
+.module h2{margin: 0px 1px;padding-left: 12px;height: 29px;line-height: 29px;font-size: 13px;color: #036;}
+.module h2 a{color: #222;text-decoration: none;}
+.module h2 span{float: right;padding-right: 10px;font-weight: normal;}
+.module h2 a:hover{color: #036;text-decoration: underline;}
+.module ul{list-style:none;margin: 13px 0px 0px;}
+.module ul li{padding-left: 24px;height: 23px;line-height: 23px;background: url(images/spot.gif) no-repeat 12px 10px;overflow: hidden;}
+.module ul li a{color: #222;text-decoration: none;}
+.module ul li a:hover{color: #036;text-decoration: underline;}
+
+.archive{width:700px;border: 1px solid #DFDFE3;}
+.breadcrumb {margin-bottom: 10px;padding-left: 12px;height: 28px;line-height: 28px;border-bottom: 1px solid #E1E9F0;background: #F3F5FA url(images/title.png) repeat-x 0 -77px;}
+.breadcrumb span.location {
+    float: left;
+}
+.breadcrumbs {
+    float: left;
+}
+.postlist {padding: 10px 15px 0px;width: 670px;list-style:none;}
+.postlist li {margin-bottom: 15px;padding: 0px 10px 10px;background-color: #F5F6F8;}
+.postlist h2 {padding: 7px 10px;font-size: 14px;color: #1A1D73;background-color: #F3F5FA;border-bottom: 1px solid #E1E9F0;}
+.postlist h2 a {color: #003366;text-decoration: none;}
+.postlist h2 a:hover{ color:#222; text-decoration:underline; }
+.postlist h2 span{ float:right; *margin-top:-22px; font-weight:normal; font-size:12px; color:#003366;}
+.postlist .excerpt{ margin-top:10px; padding:0px 5px 0px 10px; line-height:22px;}
+.meta{ padding:5px 0px 4px; color:#666;}
+.meta span{ padding:0px 5px;}
+.meta a:link, .meta a:visited{ color:#666; text-decoration:none; }
+.meta a:hover{ color:#036; text-decoration:underline;}
+
+.post{width:700px;border:1px solid #DFDFE3;}
+.single {padding: 0px 15px;width: 670px;min-height:500px;}
+.single h2 {padding: 7px 10px;font-size: 20px;color: #036;text-align: center;border-bottom: 1px solid #E1E9F0;}
+.single .singlemeta {text-align: center;}
+.entry {margin-top: 10px;padding: 0px 10px;line-height: 22px;overflow: hidden;border-bottom: 1px solid #DDD;}
+.entry p {margin-bottom: 20px;line-height:2;}
+.comm{padding:20px 0;}
+
+
+
+
+
+/*------------------
+	分页部分的CSS
+------------------*/
+.fenye{	height:36px;margin-bottom:20px;text-align:center;line-height:36px;}
+.fenye a{padding:4px 6px 4px 6px;margin:0 2px 0 2px;border:1px solid #aaa;text-decoration:none;color:#333;}
+.fenye a.current{	background:#0071AD;color:#fff;}
+.fenye a:hover{background:#0071AD;color:#fff;}
+
+
+
+#sidebar{float: right;width: 250px;overflow: hidden;}
+#sidebar ul li.widget {margin-bottom: 8px;border: 1px solid #B0BEC7;}
+#sidebar h3{margin: 0px 1px;padding-left: 26px;height: 29px;line-height: 28px;font-size: 13px;color: #036;background: url(images/title.png) no-repeat 0 -39px;}
+#sidebar ul li ul {padding: 8px 10px 8px 0px;}
+#sidebar ul li ul li {margin-bottom: 0px;padding-left: 22px;width: 216px;height: 22px;line-height: 22px;border: none;
+background: url(images/arrow.gif) no-repeat 10px 9px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+#sidebar ul li ul li a{color: #222;text-decoration: none;}
+#sidebar ul li ul li a:hover{text-decoration:underline;}
+
+#footer{margin: 10px auto;width: 960px;color: #666;}
+.footpage {margin-bottom: 15px;padding: 7px 10px;text-align: center;border: 1px solid #E6EDF2;background-color: #F1F5F9;}
+.footpage li {width: 1px;padding: 0px 6px 0px 10px;background: url(images/line.gif) no-repeat 0 center;display: inline;word-break: keep;white-space: nowrap;}
+.footpage li.nb {background: none;}
+.footpage li a{color: #222;text-decoration: none;}
+#footer p {margin: 10px 0px 5px;text-align: center;}
+
+
+/* Slideshow */
+.ban{ padding-bottom:20px; background:url(images/slides.png) no-repeat 0 bottom;position:relative;}
+#slideshow{ margin:0 auto; width:960px; height:320px; text-align:center; overflow:hidden;}
+#slideshow li{ width:960px; height:320px; position:relative;}
+#slideshow li img{ width:960px; height:320px; display:block;}
+.bx-wrapper .bx-pager{ position:absolute; right:8px; bottom:30px; z-index:1000;}
+.bx-wrapper .bx-pager a{ float:left; margin-left:3px; width:9px; height:9px; font-size:0; background:url(images/op.png) no-repeat 0 0; _width:6px; _height:6px; _background:#D79393; overflow:hidden; display:block; text-decoration:none;}
+.bx-wrapper .bx-pager a.pager-active{ background-position:-10px 1px; _background:#F40062;}
+.bx-prev, .bx-next{}
+/*幻灯片特效的css*/
+.slide {
+    float: left;
+    width: 347px;
+    height: 285px;
+    margin-right: 8px;
+    padding-top: 6px;
+}
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+    *zoom: 1;
+}
+
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border:  5px solid #fff;
+    left: -5px;
+    background: #fff;
+
+    /*fix other elements on the page moving (on Chrome)*/
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+        -ms-transform: translatez(0);
+        -o-transform: translatez(0);
+        transform: translatez(0);
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+    min-height: 50px;
+    background: url(images/bx_loader.gif) center center no-repeat #fff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+    left: 10px;
+    background: url(images/controls.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+    right: 10px;
+    background: url(images/controls.png) no-repeat -43px -32px;
+}
+
+.bx-wrapper .bx-prev:hover {
+    background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+    background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+    text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+    display: block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 11px;
+    outline: 0;
+    background: url(images/controls.png) -86px -11px no-repeat;
+    margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+    background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+    display: block;
+    text-indent: -9999px;
+    width: 9px;
+    height: 11px;
+    outline: 0;
+    background: url(images/controls.png) -86px -44px no-repeat;
+    margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+    background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: left;
+    width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+    width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #666\9;
+    background: rgba(80, 80, 80, 0.75);
+    width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+    color: #fff;
+    font-family: Arial;
+    display: block;
+    font-size: .85em;
+    padding: 10px;
+}
