@@ -1,0 +1,409 @@
+/*
+* @Author: Marte
+* @Date:   2019-05-01 23:37:06
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-05-02 23:27:32
+*/
+/* 公共 */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "宋体","Arial";
+    font-size: 12px;
+}
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.clear {
+    clear: both;
+}
+/* header */
+.header-top {
+    height: 28px;
+    line-height: 28px;
+    background: #f7f7ff;
+    border: 1px solid #e1e9f0;
+    border-top: none;
+    padding: 0 15px;
+}
+.header-mid {
+    height: 80px;
+}
+.header-mid img {
+    position: relative;
+    top: 10px;
+}
+/* 导航菜单 */
+.header-nav {
+    height: 67px;
+    background: url(images/navigation.png) no-repeat ;
+}
+.header-nav ul.menu li {
+    float: left;
+    line-height: 30px;
+    margin-top: 2px;
+    background: url(images/navigation.png) no-repeat 0 -70px;
+}
+.header-nav ul.menu li a {
+    display: block;
+    height: 32px;
+    padding: 0 32px;
+    color: #fff;
+}
+.header-nav ul.menu li a:hover {
+    text-decoration: underline;
+}
+/* 搜索表单 */
+#searchform {
+    position: relative;
+    top: 42px;
+    left: 18px;
+}
+#s {
+    width: 235px;
+    height: 14px;
+    line-height: 16px;
+    border: none;
+    padding: 2px 7px 2px 6px;
+}
+#searchsubmit {
+    position: relative;
+    left: 16px;
+    background: none;
+    border: none;
+    color: #fff;
+}
+/* container */
+.container {
+    margin: 10px 0;
+}
+/* content */
+.content {
+    float: left;
+    width: 702px;
+}
+.hang {
+    height: 285px;
+}
+.left {
+    float: left;
+}
+.left, .right {
+    width: 347px;
+    height: 285px;
+}
+.right {
+    float: right;
+}
+.info {
+    background: url(images/section.png) no-repeat;
+}
+.info h2 {
+    height: 29px;
+    line-height: 29px;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 12px;
+}
+.info h2 span {
+    float: right;
+    padding-right: 12px;
+    font-weight: normal;
+}
+.info h2 a {
+    color: #036;
+}
+.info h2 a:hover {
+    text-decoration: underline;
+}
+.info li {
+    height: 20px;
+    line-height: 20px;
+    margin: 5px 0;
+    padding-left: 26px;
+    background: url(images/spot.gif) no-repeat 12px center;
+}
+.info li a {
+    color: #222;
+}
+.info li a:hover {
+    text-decoration: underline;
+}
+.guanggao {
+    margin: 10px 0;
+}
+/* sidebar */
+.sidebar {
+    float: right;
+    width: 250px;
+}
+.widget {
+    border: 1px solid #b0bec7;
+    margin-bottom: 10px;
+}
+.widget h3{
+    color: #036;
+    font-size: 13px;
+    height: 29px;
+    line-height: 29px;
+    background: url(images/title.png) no-repeat 0 -39px;
+    text-indent: 26px;
+}
+.widget ul {
+    margin: 8px 0;
+}
+.widget li {
+    text-indent: 26px;
+    background: url(images/arrow.gif) no-repeat 10px 50%;
+    height: 22px;
+    line-height: 22px;
+    margin: 2px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.widget li a {
+    color: #555;
+}
+.widget li a:hover {
+    text-decoration: underline;
+}
+/* footer */
+.footer {
+    width: 960px;
+}
+.footer-nav {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: #f7f7ff;
+    border: 1px solid #e6edf2;
+}
+.footer-nav ul.menu li {
+    display: inline;
+}
+.footer-nav ul.menu li a {
+    color: #222;
+    padding: 10px;
+    background: url(images/line.gif) no-repeat center right;
+}
+.footer-nav ul.menu li.last a {
+    background: none;
+}
+.footer-nav ul.menu li a:hover {
+    text-decoration: underline;
+}
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+    *zoom: 1;
+}
+
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border:  none;
+    left: 0;
+    background: #fff;
+
+    /*fix other elements on the page moving (on Chrome)*/
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+        -ms-transform: translatez(0);
+        -o-transform: translatez(0);
+        transform: translatez(0);
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+    min-height: 50px;
+    background: url(images/bx_loader.gif) center center no-repeat #fff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+    left: 10px;
+    background: url(images/controls.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+    right: 10px;
+    background: url(images/controls.png) no-repeat -43px -32px;
+}
+
+.bx-wrapper .bx-prev:hover {
+    background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+    background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+    text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+    display: block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 11px;
+    outline: 0;
+    background: url(images/controls.png) -86px -11px no-repeat;
+    margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+    background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+    display: block;
+    text-indent: -9999px;
+    width: 9px;
+    height: 11px;
+    outline: 0;
+    background: url(images/controls.png) -86px -44px no-repeat;
+    margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+    background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: left;
+    width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+    width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #666\9;
+    background: rgba(80, 80, 80, 0.75);
+    width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+    color: #fff;
+    font-family: Arial;
+    display: block;
+    font-size: .85em;
+    padding: 10px;
+}
