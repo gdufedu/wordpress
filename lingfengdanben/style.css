@@ -1,0 +1,160 @@
+/*
+Theme Name: 凌风主题单本书籍类
+Author: 凌风
+Description: 凌风主题单本书籍类
+Version: 1.0
+*/
+/* 公共 */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(images/bg.gif) repeat;
+    font-family: "微软雅黑","宋体";
+    font-size: 12px;
+}
+.wrap {
+    width: 768px;
+    background: url(images/bg_paper_mid.jpg) repeat-y;
+    margin: 0 auto;
+}
+.clear {
+    clear: both;
+}
+a {
+    color: #946939;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul {
+    list-style: none;
+}
+img {
+    border: none;
+}
+/* header */
+.fenxiang {
+    height: 26px;
+    background: url(images/bg_paper_top.jpg) no-repeat;
+}
+.header-top a {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+.header-nav {
+    text-align: center;
+}
+.header-nav li {
+    display: inline;
+    margin: 0 5px;
+}
+.header-nav li a {
+    font-weight: bold;
+    font-size: 13px;
+}
+.header-zuozhe {
+    text-align: center;
+    margin: 20px 10px 0 10px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #946939;
+    border-bottom: 1px solid #bfb186;
+    padding-bottom: 10px;
+}
+/* content */
+.content {
+    margin-top: 40px;
+}
+.book {
+    margin: 20px 10px;
+    border-bottom: 1px solid #bfb186;
+    border-right: 1px solid #bfb186;
+}
+.book h2 {
+    text-align: center;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #bfb186;
+    border-bottom: none;
+    border-right: none;
+}
+.book li {
+    float: left;
+    width: 246px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #bfb186;
+    margin: 0 -1px -1px 0;
+    padding: 0 1px;
+    text-indent: 10px;
+}
+.zhangjie {
+    margin: 0 10px;
+    line-height: 40px;
+    font-size: 20px;
+}
+.zhangjie p {
+    margin: 30px 0;
+    text-indent: 40px;
+    color: #333;
+}
+.pinglun {
+    margin: 0 10px 20px;
+}
+.pn {
+    font-size: 14px;
+    margin: 0 10px 10px;
+    color: #f30;
+}
+.pn .next {
+    float: right;
+}
+.pn a {
+    color: #f30;
+}
+/* search */
+.search {
+    height: 36px;
+    line-height: 36px;
+    background: #423021;
+    margin: 0 10px;
+}
+#searchform {
+    text-align: center;
+}
+#s {
+    width: 300px;
+    height: 16px;
+    line-height: 16px;
+}
+#searchsubmit {
+    height: 20px;
+    line-height: 20px;
+    color: #423021;
+    padding: 0 10px;
+    font-weight: bold;
+    background: #fff7d6;
+    border: none;
+}
+/* footer */
+.footer {
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+}
+.footer-nav {
+    text-align: right;
+}
+.footer-nav li{
+    display: inline;
+    margin: 0 0 0 4px;
+}
+.footer-banquan {
+    text-align: right;
+    color: #473624;
+    line-height: 200%;
+}
